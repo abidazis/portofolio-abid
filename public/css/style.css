@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top right, skyblue, white);
+    color: #1e1e2f;
+}
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.navbar a {
+    color: #1e1e2f;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 40px;
+    text-align: center;
+}
+.hero-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004aad;
+    margin-left: 20px;
+}
+.hero img {
+    width: 250px;
+    border-radius: 10px;
+    background-color: rgb(87, 160, 255);
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/* Responsif Hero */
+@media (min-width: 768px) {
+    .hero {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        text-align: left;
+    }
+    .hero img {
+        width: 320px;
+    }
+    .hero-text h1 {
+        font-size: 3rem;
+    }
+}
+
+/* Custom Button */
+.btn-custom {
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.btn-custom:hover {
+    background-color: #002e70;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.project-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Grid Layout for Projects */
+@media (min-width: 768px) {
+    .projects-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+@media (min-width: 1024px) {
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Contact */
+.contact-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-icons a {
+    margin: 10px;
+    font-size: 24px;
+    color: #004aad;
+    text-decoration: none;
+}
+
+/* Responsif Contact */
+@media (max-width: 576px) {
+    .contact-icons a {
+        font-size: 20px;
+    }
+}
+
+.section {
+padding: 60px 20px;
+text-align: center; /* Pusatkan teks */
+}
+
+.container-aboutme {
+text-align: center;
+padding: clamp(20px, 5vw, 50px); /* Responsif */
+background: linear-gradient(135deg, rgb(119, 146, 189), rgb(0, 140, 255));
+border-radius: 10px;
+max-width: 900px; /* Maksimum lebar */
+width: 90%;
+margin: 0 auto;
+overflow: hidden; /* Pastikan tidak keluar dari batas */
+}
+
+.profile h2 {
+color:rgb(255, 255, 255); /* Warna judul */
+font-size: 2rem; /* Ukuran judul */
+font-weight: bold; /* Tebalkan judul */
+}
+
+.profile p {
+color: rgb(255, 255, 255); /* Warna teks */
+font-size: 1.2rem; /* Ukuran teks */
+line-height: 1.6; /* Jarak antar baris */
+max-width: 800px; /* Maksimal lebar teks agar tidak terlalu panjang */
+margin: 0 auto; /* Agar teks tetap di tengah */
+}
+
+
+/* ===== Experience & Education Section ===== */
+#experience-education {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, rgb(30, 50, 80), rgb(10, 120, 200));
+    color: white;
+    text-align: center;
+}
+
+.container-experience-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.experience, .education {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%;
+    min-width: 300px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.experience:hover, .education:hover {
+    transform: translateY(-5px);
+}
+
+.exp-item, .edu-item {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+    .container-experience-education {
+        flex-direction: column;
+    }
+
+    .experience, .education {
+        width: 90%;
+    }
+}
